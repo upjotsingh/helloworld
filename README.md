@@ -65,12 +65,6 @@ Our vision is to empower businesses by leveraging technology to create meaningfu
 
 ---
 
-## 📸 Screenshots
-
-> Add screenshots of your website here
-
----
-
 ## 📬 Contact
 
 Interested in working together or have a project in mind?
