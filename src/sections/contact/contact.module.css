@@ -1,0 +1,116 @@
+.section {
+  padding: 100px 0;
+  position: relative;
+}
+
+.contactGrid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.contactCard {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 40px;
+  border-radius: 36px;
+  backdrop-filter: blur(18px);
+}
+
+.contactTitle {
+  margin-bottom: 18px;
+  font-size: clamp(2.2rem, 4vw, 3rem);
+  line-height: 1.05;
+}
+
+.contactDescription {
+  color: var(--softTextColor);
+  line-height: 1.8;
+  margin-bottom: 32px;
+}
+
+.formGrid {
+  display: grid;
+  gap: 20px;
+}
+
+.formField,
+.formTextarea {
+  width: 100%;
+  border-radius: 22px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: rgba(255, 255, 255, 0.05);
+  padding: 18px 20px;
+  color: var(--textColor);
+  outline: none;
+}
+
+.formTextarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
+.formSubmit {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 999px;
+  padding: 16px 28px;
+  background: linear-gradient(135deg, var(--accentColor), #6d5dfc);
+  color: white;
+  cursor: pointer;
+  font-weight: 700;
+  transition: transform 0.25s ease;
+}
+
+.formSubmit:hover {
+  transform: translateY(-2px);
+}
+
+.contactIllustration {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 36px;
+  background: linear-gradient(180deg, rgba(110, 93, 252, 0.18), rgba(14, 165, 233, 0.12));
+  padding: 2rem;
+}
+
+.contactIllustration img {
+  width: min(100%, 460px);
+  height: auto;
+}
+
+.successMessage {
+  margin-top: 16px;
+  padding: 18px 20px;
+  border-radius: 20px;
+  background: rgba(16, 185, 129, 0.12);
+  color: #0f766e;
+  border: 1px solid rgba(16, 185, 129, 0.2);
+}
+
+/* Mobile Responsive */
+@media (max-width: 1024px) {
+  .contactGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 80px 0;
+  }
+
+  .contactGrid {
+    gap: 24px;
+  }
+}
+
+@media (max-width: 540px) {
+  .contactCard {
+    padding: 26px;
+  }
+}

@@ -1,0 +1,79 @@
+.section {
+  padding: 100px 0;
+  position: relative;
+}
+
+.sectionHeader {
+  text-align: center;
+  margin-bottom: 56px;
+}
+
+.sectionLabel {
+  display: inline-block;
+  margin-bottom: 18px;
+  color: var(--accentColor);
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.sectionTitle {
+  font-size: clamp(2.4rem, 4vw, 3.4rem);
+  line-height: 1.05;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.processGrid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.processStep {
+  padding: 28px;
+  border-radius: 28px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.03);
+  min-height: 220px;
+}
+
+.processStepNumber {
+  font-size: 1.4rem;
+  color: var(--accentColor);
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.processStepTitle {
+  font-size: 1.2rem;
+  margin-bottom: 14px;
+}
+
+.processStepDescription {
+  color: var(--softTextColor);
+  line-height: 1.8;
+}
+
+/* Mobile Responsive */
+@media (max-width: 1024px) {
+  .processGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 80px 0;
+  }
+
+  .processGrid {
+    gap: 24px;
+  }
+}
+
+@media (max-width: 540px) {
+  .processStep {
+    padding: 26px;
+  }
+}
